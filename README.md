@@ -30,7 +30,7 @@ This repository contains the toy-compiler created as part of the course **CS F36
 
 ## Instructions to run
 
-1. **Create a local copy:**
+1. **Create a local copy:** <br>
 Clone this repository to your local machine using the following command or download the zip file.
    
    ```bash
@@ -52,12 +52,40 @@ Clone this repository to your local machine using the following command or downl
 		```
 		  <br>
 
-3. **Compiling ERPLAG code:** 
+3. **Compiling ERPLAG code:** <br>
 Once all the files have been compiled correctly, you can compile an ERPLAG program by running the following:
 	```bash
 	$ ./compiler <testcase.txt> <outputFile.asm>
 	```
-	Here, you can provide the path to your testcase (ERPLAG program file). For your reference, some example testcase files have been included here.
+	Here, you can provide the path to your testcase (ERPLAG program file) and the name of your output asm file. For your reference, some example testcase files have been included here. By running this command, you will get to see a menu like this on the terminal:
+	```bash
+	 $ Enter one option out of below: 
+	     ***********
+	     0. Exit
+	     1. Print token list on terminal:
+	     2. Print Parse tree on terminal:
+	     3. Print AST on terminal:
+	     4. Print Size of AST/Parse Tree:
+	     5. Print Symbol Table :
+	     6. Activation record size :
+	     7. Print Static Dynamic Arrays :
+	     8. Error Analysis(Lexical, Syntax, Semantic) :
+	     9. Codegen :
+	    ******
+	```
+	#### What each option means: <br>
+	0 - Exit: To exit the process. <br>
+   	1 - Prints the list of tokens on the terminal, after invoking the lexer. Lexical errors ,if any, are displayed with appropriate line numbers. <br>
+   	2 - If there are no lexical errors, invokes the parser and generates the parse tree on the terminal. <br>
+   	3 - Abstract Syntax Tree is generated from the parse tree for the source code. You can find the rules for AST conversion here.<br>
+        4 - Prints the size of AST and parse tree, thereby showing the memory saved by creation of AST. <br>
+	5 - Prints all the symbol tables for the given ERPLAG program, showing the scope and type information for each variable. <br>
+        6 - Prints the activation record size for different scopes.<br>
+        7 - Prints the list of static and dynamic arrays, with their low and high ranges, and line number of declaration.<br>
+        8 - Error analysis for the source program with appropriate line numbers.<br>
+        9 - Generates x86 executable for the given source program which can be run using the following command. This feature is unstable for now.<br>
+	
+    
 
 	To run the `.asm` file, use this command 
 	```bash
@@ -90,18 +118,6 @@ Input: Enter an integer value
 3
 Output: 9
 ```
-## Sample Menu:
 
-    $ Enter one option out of below: 
-     ***********
-     0. Exit
-     1. Print token list on terminal:
-     2. Print Parse tree on terminal:
-     3. Print AST on terminal:
-     4. Print Size of AST/Parse Tree:
-     5. Print Symbol Table :
-     6. Activation record size :
-     7. Print Static Dynamic Arrays :
-     8. Error Analysis(Lexical, Syntax, Semantic) :
-     9. Codegen :
-    ******
+
+   

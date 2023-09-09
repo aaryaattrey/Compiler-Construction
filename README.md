@@ -7,7 +7,7 @@ This repository contains the toy-compiler created as part of the course **CS F36
 
 ## Features supported by the language
 
-> [Click here](./docs/language%20specifications.pdf) for complete language specifications.
+> [Click here](./language-features.pdf) for complete language specifications.
 
 - The language `ERPLAG` is a strongly typed language with primitive data types as **integer** and **floating point**. 
 - It also supports two other data types: **boolean** and **arrays**. 
@@ -54,7 +54,7 @@ This repository contains the toy-compiler created as part of the course **CS F36
 Clone this repository to your local machine using the following command or download the zip file.
    
    ```bash
-   $ git clone https://github.com/aaryaattrey/erplag-compiler.git
+   $ git clone https://github.com/aaryaattrey/Compiler-Construction.git
    ```
    <br>
 2. **Building the compiler:** 
@@ -77,7 +77,7 @@ Once all the files have been compiled correctly, you can compile an ERPLAG progr
 	```bash
 	$ ./compiler <testcase.txt> <outputFile.asm>
 	```
-	Here, you can provide the path to your testcase (ERPLAG program file) and the name of your output asm file. For your reference, some example testcase files have been included here. By running this command, you will get to see a menu like this on the terminal:
+	Here, you can provide the path to your testcase (ERPLAG program file) and the name of your output asm file. For your reference, some example testcase files have been included [here](./testcases). By running this command, you will get to see a menu like this on the terminal:
 	```bash
 	 $ Enter one option out of below: 
 	     ***********
@@ -97,7 +97,7 @@ Once all the files have been compiled correctly, you can compile an ERPLAG progr
 	0 - Exit: To exit the process. <br>
    	1 - Prints the list of tokens on the terminal, after invoking the lexer. Lexical errors ,if any, are displayed with appropriate line numbers. <br>
    	2 - If there are no lexical errors, invokes the parser and generates the parse tree on the terminal. <br>
-   	3 - Abstract Syntax Tree is generated from the parse tree for the source code. You can find the rules for AST conversion here.<br>
+   	3 - Abstract Syntax Tree is generated from the parse tree for the source code. You can find the rules for AST conversion [here](./AST_SEMANTIC_RULES.pdf).<br>
         4 - Prints the size of AST and parse tree, thereby showing the memory saved by creation of AST. <br>
 	5 - Prints all the symbol tables for the given ERPLAG program, showing the scope and type information for each variable. <br>
         6 - Prints the activation record size for different scopes.<br>

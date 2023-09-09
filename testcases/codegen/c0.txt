@@ -1,0 +1,34 @@
+<<<driver program>>>
+start
+declare a : array[1..4] of integer;
+get_value(a);
+print(a);
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

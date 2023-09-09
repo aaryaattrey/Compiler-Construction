@@ -1,0 +1,11 @@
+
+<<<driver program>>>
+start
+declare b:integer;
+declare a:integer;
+get_value(a);
+b:=a*5;
+print(b);
+end
+
+

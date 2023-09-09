@@ -1,0 +1,26 @@
+<<<driver program>>>
+start
+declare b:integer;
+declare a:integer;
+get_value(a);
+b:=a;
+print(b);
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

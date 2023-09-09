@@ -1,0 +1,9 @@
+<<<driver program>>>
+start
+declare a:integer;
+get_value(a); 
+print(a);
+end
+
+
+
